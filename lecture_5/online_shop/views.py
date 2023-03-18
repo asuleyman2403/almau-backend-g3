@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
 import json
 from lecture_5.settings import STATIC_URL
+from rest_framework.views import APIView
 
 def home_page(request):
     categories = Category.objects.all()
