@@ -37,11 +37,6 @@ class BlogsPostsAPIView(ListCreateAPIView):
 
 
 
-
-
-
-
-
 class ListPostAPIView(ListAPIView):
     serializer_class = PostSerializer
     queryset = Post.objects.all()
